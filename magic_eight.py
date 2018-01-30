@@ -1,7 +1,6 @@
 def user_prompt():
-    responses = []
     user_response = input("What is your question?")
-    responses.append(user_response)
-
-user_prompt()
-print(responses)
+    while user_response != "quit":
+        user_response = input("What is your question?")
+        if user_response[-1] != ?:
+            return “I’m sorry, I can only answer questions.”
