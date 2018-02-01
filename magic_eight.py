@@ -12,33 +12,35 @@ answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes defini
 
 
 def user_prompt():
+    responses = []
     user_response = input("What is your question?")
-check_question
+# <<<<<<< HEAD
+    if user_response[-1] != '?':
+        print('I am sorry, I can only answer questions.')
+    else:
+        random_choice()
 
-HEAD
-master
     while user_response != "quit":
         user_response = input("What is your question?")
-        if user_response[-1] != ?:
-            return “I’m sorry, I can only answer questions.”
-check_question
+
+        if user_response[-1] == '?':
+            responses.append(user_response)
+            random_choice()
+
+        if user_response[-1] != '?':
+            print('I am sorry, I can only answer questions.')
+
+        if user_response == "quit":
+            print("See you next time")
+            break
 
 
-
-master
-    responses.append(user_response)
-
-
-    print(responses)
+# =======
 
 def random_choice():
     print(random.choice(answers))
 
-
 user_prompt()
-random_choice()
- check_question
-master
 
-da56b70da38f508ba4b28457bc20e988607e6e1f
-master
+
+# >>>>>>> da56b70da38f508ba4b28457bc20e988607e6e1f
