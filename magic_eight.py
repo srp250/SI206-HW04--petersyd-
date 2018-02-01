@@ -19,11 +19,17 @@ def user_prompt():
         print('I am sorry, I can only answer questions.')
     else:
         random_choice()
+
     while user_response != "quit":
         user_response = input("What is your question?")
 
-        responses.append(user_response)
-        random_choice()
+        if user_response[-1] == '?':
+            responses.append(user_response)
+            random_choice()
+
+        if user_response[-1] != '?':
+            print('I am sorry, I can only answer questions.')
+
         if user_response == "quit":
             print("See you next time")
             break
