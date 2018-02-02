@@ -18,8 +18,6 @@ def user_prompt():
 
     if user_response[-1] != '?':
         print('I am sorry, I can only answer questions.')
-    else:
-        random_choice()
 
     while user_response != "quit":
         user_response = input("What is your question?")
