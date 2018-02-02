@@ -14,11 +14,8 @@ answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes defini
 def user_prompt():
     responses = []
     user_response = input("What is your question?")
-<<<<<<< HEAD
-# <<<<<<< HEAD
-=======
 
->>>>>>> check_question
+
     if user_response[-1] != '?':
         print('I am sorry, I can only answer questions.')
     else:
@@ -37,23 +34,9 @@ def user_prompt():
         if user_response == "quit":
             print("See you next time")
             break
-<<<<<<< HEAD
 
-
-# =======
-=======
-
-
-
->>>>>>> check_question
 
 def random_choice():
     print(random.choice(answers))
 
 user_prompt()
-<<<<<<< HEAD
-
-
-# >>>>>>> da56b70da38f508ba4b28457bc20e988607e6e1f
-=======
->>>>>>> check_question
